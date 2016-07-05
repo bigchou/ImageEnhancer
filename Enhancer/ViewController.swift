@@ -8,11 +8,18 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let myimage = self.myimage
+        print("current frame height: ",myimage.frame.height)
+        print("current frame width: ",myimage.frame.width)
+        print("height: ",myimage.image!.size.height)
+        print("width: ",myimage.image!.size.width)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,6 +28,7 @@ class ViewController: UIViewController {
         // do something
     }
 
+    @IBOutlet var myimage: UIImageView!
 
 }
 
